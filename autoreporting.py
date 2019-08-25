@@ -3,8 +3,7 @@
 #libraries
 from jinja2 import FileSystemLoader, Environment
 import pandas as pd
-# import seaborn as sns
-# from matplotlib import pyplot as plt
+
 
 #configure display settings for pandas tables (enable wide columns)
 pd.set_option("display.max_colwidth",200)
@@ -40,7 +39,7 @@ def main():
 
     #content to be published
     #content = [1,2,3,4,5]#"This is my first report"
-    title = "Report with a table section"
+    title = "Basic HTML Report"
     sections = list()
 
 

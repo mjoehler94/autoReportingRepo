@@ -4,14 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <title>{{ title }}</title>
+{#    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">#}
+{#    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">#}
+{#    <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">#}
+
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css">
+
+{#    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.js">#}
+
+</head>
+
 </head>
 
 <body>
-<h1>{{ title }}</h1>
-<p> This report was automatically generated. </p>
-{% for section in sections %}
-	{{ section }}
-{% endfor %}
+{#<h1>{{ title }}</h1>#}
+{#<p> This report was automatically generated. </p>#}
+{#{% for section in sections %}#}
+{#	{{ section }}#}
+{#{% endfor %}#}
+
+ <main class="wrapper">
+        <header class="header">
+            <section class="container">
+                <h1>{{ title }}</h1>
+                <p>This report was automatically generated.</p>
+            </section>
+        </header>
+        {% for section in sections %}
+        {{ section }}
+        {% endfor %}
+    </main>
+
 
 </body>
 
